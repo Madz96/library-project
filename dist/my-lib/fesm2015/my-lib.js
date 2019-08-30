@@ -95,7 +95,7 @@ MyLibModule.decorators = [
     { type: NgModule, args: [{
                 declarations: [MyLibComponent, NavbarComponent, ButtonComponent],
                 imports: [],
-                exports: [MyLibComponent]
+                exports: [MyLibComponent, NavbarComponent, ButtonComponent]
             },] }
 ];
 
