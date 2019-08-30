@@ -1,4 +1,5 @@
 import { Injectable, ɵɵdefineInjectable, Component, NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 /**
  * @fileoverview added by tsickle
@@ -94,7 +95,7 @@ class MyLibModule {
 MyLibModule.decorators = [
     { type: NgModule, args: [{
                 declarations: [MyLibComponent, NavbarComponent, ButtonComponent],
-                imports: [],
+                imports: [CommonModule],
                 exports: [MyLibComponent, NavbarComponent, ButtonComponent]
             },] }
 ];

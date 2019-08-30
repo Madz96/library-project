@@ -1,8 +1,8 @@
 (function (global, factory) {
-    typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular/core')) :
-    typeof define === 'function' && define.amd ? define('my-lib', ['exports', '@angular/core'], factory) :
-    (global = global || self, factory(global['my-lib'] = {}, global.ng.core));
-}(this, function (exports, core) { 'use strict';
+    typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular/core'), require('@angular/common')) :
+    typeof define === 'function' && define.amd ? define('my-lib', ['exports', '@angular/core', '@angular/common'], factory) :
+    (global = global || self, factory(global['my-lib'] = {}, global.ng.core, global.ng.common));
+}(this, function (exports, core, common) { 'use strict';
 
     /**
      * @fileoverview added by tsickle
@@ -112,7 +112,7 @@
         MyLibModule.decorators = [
             { type: core.NgModule, args: [{
                         declarations: [MyLibComponent, NavbarComponent, ButtonComponent],
-                        imports: [],
+                        imports: [common.CommonModule],
                         exports: [MyLibComponent, NavbarComponent, ButtonComponent]
                     },] }
         ];
